@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Core components -->
+    <Compile Include="src/Core/Tokenizer.fs" />
+    <Compile Include="src/Core/Stemmer.fs" />
+    <Compile Include="src/Core/StopWords.fs" />
+    
+    <!-- Models -->
+    <Compile Include="src/Models/TfIdf.fs" />
+    <Compile Include="src/Models/NaiveBayes.fs" />
+    
+    <!-- Similarity metrics -->
+    <Compile Include="src/Similarity/Jaccard.fs" />
+    <Compile Include="src/Similarity/Cosine.fs" />
+    
+    <!-- Data utilities -->
+    <Compile Include="src/Data/Loaders.fs" />
+    <Compile Include="src/Data/Preprocessing.fs" />
+  </ItemGroup>
+
+</Project>

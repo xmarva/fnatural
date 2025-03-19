@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <GenerateProgramFile>false</GenerateProgramFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="tests/TokenizerTests.fs" />
+    <Compile Include="tests/StemmerTests.fs" />
+    <Compile Include="tests/TfIdfTests.fs" />
+    <Compile Include="tests/Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsUnit" Version="5.3.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.7.2" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.5.0" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FNatural.fsproj" />
+  </ItemGroup>
+
+</Project>
